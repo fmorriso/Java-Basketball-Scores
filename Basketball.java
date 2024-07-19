@@ -52,12 +52,14 @@ public class Basketball
 
 
     private static String getName(String prompt) {
-        System.out.println(prompt);
+        System.out.print(prompt);
         return input.nextLine();
     }
 
     private static int getPlayerScore(String name) {
-        System.out.println("Enter " + name + "'s score:");
-        return input.nextInt();
+        System.out.print("Enter " + name + "'s score:>");
+        int n = input.nextInt();
+        input.nextLine();
+        return n;
     }
 }
