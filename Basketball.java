@@ -6,20 +6,19 @@ public class Basketball
 
     public static void main(String[] args)
     {
-        // 1. ask for player 1 name
+        // Ask for player 1 name
         String name1 = getName("Enter player one's name:>");
 
-        // 2. ask for player 2 name
-        String name2 = getName("Enter player two's name:>");
-
-        // 3. ask for player 1's score using that player's name
+        // Ask for player 1's score using that player's name
         int score1 = getPlayerScore(name1);
 
-        // 4. ask for player 2's score using that player's name
+        // Ask for player 2 name
+        String name2 = getName("Enter player two's name:>");
+
+        // Ask for player 2's score using that player's name
         int score2 = getPlayerScore(name2);
 
-
-        // 5. print names and corresponding scores in alphabetical order
+        // Print names and corresponding scores in alphabetical order
         String line1, line2;
         if(name1.compareTo(name2) < 0)
         {
